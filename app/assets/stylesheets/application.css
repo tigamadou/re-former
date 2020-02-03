@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+ html{height: 100%;}
+ body{
+     background: #4728cb;
+     color: #666;
+     
+ }
+ .container{
+     width: 300px;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+ .btn-primary{
+     background-color: #4728cb;
+ }
+ .btn-primary:hover{
+     background-color: #fff;
+     color: #4728cb;
+ }
+ .card-header{
+     background-color: #fff;
+     color: #4728cb;
+ }

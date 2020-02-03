@@ -1,0 +1,40 @@
+
+    <% provide(:title, "Create a new User") %>
+    <div class="container">
+        <div>
+
+            <% flash.each do |key, value| %>
+                <div class="alert alert-<%= key %>"><%= value %></div>
+            <% end %>
+            <div class="card">
+                <div class="card-header">
+                    Create a new User
+                </div>
+                <div class="card-body">
+    
+                    <form accept-charset="UTF-8" action="/users" method="post">
+                        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+                        <div class="form-group">
+                            <label for="username">User name</label>
+                            <input type="text" name="username" class="form-control" required autofocus value="johndoe">        
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="username">Email</label>
+                            <input type="email" name="email" class="form-control" required value="johndoe@domain.com">
+                
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" required autocomplete="off" value="123456">
+                
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Create</button>
+                        
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
