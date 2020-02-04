@@ -3,9 +3,7 @@
 <div class="container">
     <div>
 
-        <% flash.each do |key, value| %>
-            <div class="alert alert-<%= key %>"><%= value %></div>
-        <% end %>
+       
         <div class="card">
             <div class="card-header">
                 Edit User
@@ -13,6 +11,7 @@
             <div class="card-body">
 
                 <%= form_for @user do |f| %>
+                    <%= render "shared/error_messages" %>
                     <div class="form-group">
                         <%= f.label :username %>:
                         <%= f.text_field :username, placeholder: 'johndoe', class: 'form-control' %>
