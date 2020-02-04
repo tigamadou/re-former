@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 		if @user.save
 				redirect_to new_user_path, flash: {success: 'User created!'}
 		else
-			redirect_to new_user_path, flash: {danger: 'Oops. This email is already used!'}
+			redirect_to new_user_path, flash: {danger: 'User not created!'}
 		end
 	end
 
@@ -20,5 +20,14 @@ class UsersController < ApplicationController
 
 	def edit
 		@user = User.find(params[:id])
+	end
+
+	def update
+		@user = User.find(params[:id])
+		if @user.update_attributes(user_params)
+			redirect_to edit_user_path(@user), flash: {success: 'User updated!'}
+		else
+			redirect_to edit_user_path(@user), flash: {danger: 'User update failed!'}
+		end
 	end
 end
