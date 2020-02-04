@@ -11,6 +11,21 @@
                     Create a new User
                 </div>
                 <div class="card-body">
+
+                    <%= form_for @user do |f| %>
+                        <%= f.label :username %>:
+                        <%= f.text_field :username %><br />
+                    
+                        <%= f.label :email %>:
+                        <%= f.email_field :email %><br />
+
+                        <%= f.label :password %>:
+                        <%= f.password_field :password %><br />
+                    
+                        <%= f.submit %>
+                    <% end %>
+
+                    <!-- 
                     <%= form_tag(users_path) do %>
                         <div class="form-group">
                             <%= label_tag 'username', 'User name' %>
@@ -28,6 +43,7 @@
                             <%= content_tag(:strong, 'Submit') %>
                         <% end %>
                     <% end %>
+                    -->
                 </div>
             </div>
         </div>
