@@ -13,16 +13,24 @@
                 <div class="card-body">
 
                     <%= form_for @user do |f| %>
-                        <%= f.label :username %>:
-                        <%= f.text_field :username %><br />
+                        <div class="form-group">
+                            <%= f.label :username %>:
+                            <%= f.text_field :username, placeholder: 'johndoe', class: 'form-control' %>
+                        </div>
                     
-                        <%= f.label :email %>:
-                        <%= f.email_field :email %><br />
+                        <div class="form-group">
+                            <%= f.label :email %>:
+                            <%= f.email_field :email, placeholder: 'johndoe@domain.com', class: 'form-control' %>
+                        </div>
 
-                        <%= f.label :password %>:
-                        <%= f.password_field :password %><br />
+                        <div class="form-group">
+                            <%= f.label :password %>:
+                            <%= f.password_field :password, class: 'form-control' %><br />
+                        </div>
                     
-                        <%= f.submit %>
+                        <div class="form-group">
+                            <%= f.submit "Create", class: 'btn btn-primary btn-block' %>
+                        </div>
                     <% end %>
 
                     <!-- 
