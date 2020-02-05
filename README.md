@@ -12,7 +12,7 @@ In this project,we learnt the multiple ways to build a form in rails that can se
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-- git clone git@github.com:trekab/micro-reddit.git
+- git clone git@github.com:genzaraki/re-former.git
 
 Then you browse to the folder and exucute the following commands
 - cd re-former
@@ -21,7 +21,7 @@ Then you browse to the folder and exucute the following commands
 Thus run the migration
 - rails db:migrate
 
-Now, you can open the app in your text editor to check out the forms created.
+Now, you can open the app in your text editor to check out the forms created and run 'rails s' to test the app.
 
 
 ## Authors
@@ -50,7 +50,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://microverse.org)
-- [The Oddin Project](https://www.theodinproject.com/courses/ruby-on-rails/)
+- [The Oddin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms)
 
 ## 📝 License
 
