@@ -1,0 +1,64 @@
+<%= form_for @user do |f| %>
+    <%= render "shared/error_messages" %>
+    <div class="form-group">
+        <%= f.label :username %>:
+        <%= f.text_field :username, placeholder: 'johndoe', class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+        <%= f.label :email %>:
+        <%= f.email_field :email, placeholder: 'johndoe@domain.com', class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+        <%= f.label :password %>:
+        <%= f.password_field :password, class: 'form-control' %><br />
+    </div>
+
+    <div class="form-group">
+        <%= f.submit "Edit", class: 'btn btn-primary btn-block' %>
+    </div>
+<% end %>
+
+<!-- 
+    <%= form_tag(users_path) do %>
+        <div class="form-group">
+            <%= label_tag 'username', 'User name' %>
+            <%= text_field_tag 'user[username]', 'johndoe' %>
+        </div>
+        <div class="form-group">
+            <%= label_tag 'email', 'Email' %>
+            <%= email_field_tag 'user[email]', 'johndoe@domain.com' %>
+        </div>
+        <div class="form-group">
+            <%= label_tag 'password', 'Password' %>
+            <%= password_field_tag 'user[password]', '123456' %>
+        </div>
+        <%= button_tag(type: 'submit') do %>
+            <%= content_tag(:strong, 'Submit') %>
+        <% end %>
+    <% end %>
+
+    <form accept-charset="UTF-8" action="/users" method="post">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <div class="form-group">
+            <label for="username">User name</label>
+            <input type="text" name="user[username]" class="form-control" required autofocus value="johndoe">        
+        </div>
+
+        <div class="form-group">
+            <label for="username">Email</label>
+            <input type="email" name="user[email]" class="form-control" required value="johndoe@domain.com">
+
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="user[password]" class="form-control" required autocomplete="off" value="123456">
+
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create</button>
+
+
+    </form>
+-->

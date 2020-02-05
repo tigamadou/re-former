@@ -1,24 +1,57 @@
-# README
+# Re-Former
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+In this project,we learnt the multiple ways to build a form in rails that can send parameters to a controller so that it can build an instance of a model with those parameters.
 
-* Ruby version
 
-* System dependencies
+## Built With
 
-* Configuration
+- Ruby,
+- Ruby On Rails,
 
-* Database creation
+## Getting Started
 
-* Database initialization
+To get a local copy up and running follow these simple example steps.
+- git clone git@github.com:genzaraki/re-former.git
 
-* How to run the test suite
+Then you browse to the folder and exucute the following commands
+- cd re-former
+- bundle install
 
-* Services (job queues, cache servers, search engines, etc.)
+Thus run the migration
+- rails db:migrate
 
-* Deployment instructions
+Now, you can open the app in your text editor to check out the forms created and run 'rails s' to test the app.
 
-* ...
+
+## Authors
+
+👤 **Treasure Kabareebe**
+
+- Github: [@trekab](https://github.com/trekab)
+- Linkedin: [Treasure Kabareebe](https://www.linkedin.com/in/treasure-kabareebe/)
+
+👤 **Amadou IBRAHIM**
+
+- Github: [@genzaraki](https://github.com/genzaraki)
+- Twitter: [@tigamadou](https://twitter.com/tigamadou)
+- Linkedin: [Amadou IBRAHIM](https://www.linkedin.com/in/amadou-ibrahim-75769167/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- [Microverse](https://microverse.org)
+- [The Oddin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms)
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
