@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to new_user_path, flash: { success: 'User created!' }
     else
-      render 'new'
+      render :new
     end
   end
 
@@ -29,9 +29,9 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     if @user.update_attributes(user_params)
-      redirect_to edit_user_path(@user)
+      redirect_to edit_user_path(@user), flash: { success: 'User updated!' }
     else
-      render 'edit'
+      render :edit
     end
   end
 end
